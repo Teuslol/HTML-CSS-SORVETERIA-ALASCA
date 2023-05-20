@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="vierport" content="width-device-width"><!--aqui abilitamos o nosso html para mobile-->
+		<link rel="stylesheet" href="css/reset.css">
+    	<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
+		<!--<link rel="stylesheet" href="css/stylemy-home.css">-->
+	</head>
+
+	<body style="margin:0 1px;">
+		<!--<header>-->
+			<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-inverse ">
+			
+				<div class="caixa">
+					<div>
+						<img class="banner" src="imagem/logo1.jpeg "  >
+					</div>			
+					
+					<ul class="navbarp">
+						
+						<li><a href="menu_principal.html"><span class="glyphicon glyphicon-home"></span></a></li>
+						<li><a href="produtos.html">Produto</a></li>
+						<li><a href="contato.html"> Contato <span class="glyphicon glyphicon-earphone"></span></a></li>
+					</ul>
+					
+				</div>
+			</nav>
+		<!--</header>-->
+
+<main>
+    <form action="">
+<!--parte onde voce ira digitar seus dados-->
+<!--O <fieldset> é usado para agrupar todos os controles do formulário para dar uma aparência estruturada.-->
+        <fieldset>
+            <label>Nome e Sobrenome: </label>
+            <input type="text" id="email" class="input-padrao" required>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea class="input-padrao" id="mensagem" cols="70" rows="10" required></textarea>
+        </fieldset>
+        <!--parte onde voce ira selecionar suas preferencias -->
+        <fieldset>
+            <!--dentro de um fieldset, usamos o legend no lugar do p-->
+            <legend>Preferencia de contato:</legend>
+            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" >Email: </label>
+            
+
+            <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone: </label>
+            
+
+            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp: </label>
+            
+        
+        </fieldset>
+        <fieldset>
+            <legend>Escolha horario da reserva:</legend>
+            <!--tipo simples de fazer dropindown-->
+            <select name="" id="">
+                <option value="">Manhã</option>
+                <option value="">Tarde</option>
+                <option value="">Noite</option>
+            </select>
+        </fieldset>
+        
+        <label><input class="checkbox" type="checkbox" name="" id=""> Receber novidades por Email</label>
+
+        <input class="enviar" type="submit" value="Enviar formulario">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>Horario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Seg - Sex</td>
+                <td>09H - 19H</td>
+            </tr>
+            <tr>
+                <td>Sab/Feriado</td>
+                <td>09H - 13H</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
+
+    <footer>
+        <img src="IMAGEM/logo-roda-pe.jpg" width="50" height="50" >
+        <p class="copyright">&copy; Copyright Sorveteria Alasca</p>
+    </footer>
+</body>
+</html>
